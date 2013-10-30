@@ -1,0 +1,22 @@
+{
+  "site": {
+    "project": "Less-Base",
+    "producer": "Form5",
+    "layout": "layout.html"
+  },
+  "auth": {
+    "enabled": false,
+    "username": "user",
+    "password": "123"
+  },
+  "routes": [
+    {
+      "rule": "/elements",
+      "name": "Elements",
+      "view": "elements.html",
+      "data": {
+        "hello": "world"
+      }
+    }
+  ]
+}

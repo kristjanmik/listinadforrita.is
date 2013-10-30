@@ -1,0 +1,32 @@
+// wrap.less
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  background: @color-secondary;
+}
+
+body {
+  margin: 0;
+
+  font-family: @font-family;
+  font-size: @font-size;
+  color: @font-color;
+
+  line-height: @line-height;
+}
+
+.site-wrap {
+}
+
+.limit {
+  .clearfix();
+  .box-sizing(border-box);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 @spacing;
+  width: 100%;
+  max-width: @page-max-width;
+  min-width: @page-min-width;
+}

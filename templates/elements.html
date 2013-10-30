@@ -1,0 +1,573 @@
+<div class="limit">
+  <section class="section" id="typography">
+    <h1>Primary heading</h1>
+    <h2>Secondary heading</h2>
+    <h3>Tertiary heading</h3>
+    <h4>Quater.. seriously?</h4>
+    <h5>Good old heading 5</h5>
+    <h6>Classic but seldom used heading 6</h6>
+
+    <p>I am a paragraph, containing this magnificent <a href="#typography">link</a></p>
+
+    <div class="columns">
+      <p>We are a few paragraphs filled with text and grouped together in a css3 columns container.</p><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><hr><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    </div>
+
+    <hr class="dotline">
+
+    <p><code>This is a code snippet</code></p>
+
+
+    <dl>
+      <dt>Definition list term</dt>
+      <dd>Definition list description</dd>
+      <dt>Definition list term #2</dt>
+      <dd>Definition list description #2</dd>
+    </dl>
+
+    <hr class="dotline">
+
+    <div class="grid gutter collapse600">
+      <div class="col s1of2">
+        <h4>Default unordered list</h4>
+        <ul>
+          <li>List item</li>
+          <li>List item</li>
+          <li>List item
+            <ul>
+              <li>Sublist item</li>
+              <li>Sublist item</li>
+            </ul>
+          </li>
+          <li><a href="#_">List item w/link</a></li>
+          <li><a href="#_">List item w/link</a></li>
+          <li>List item</li>
+        </ul>
+      </div>
+      <div class="col s1of2">
+        <h4>Default ordered list</h4>
+        <ol>
+          <li>List item</li>
+          <li>List item</li>
+          <li>List item
+            <ol>
+              <li>Sublist item</li>
+              <li>Sublist item</li>
+            </ol>
+          </li>
+          <li><a href="#_">List item w/link</a></li>
+          <li><a href="#_">List item w/link</a></li>
+          <li>List item</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="buttons">
+    <h1>Buttons</h1>
+
+    <div class="table-wrap">
+      <table class="showcase">
+        <thead>
+          <tr>
+            <td class="empty"></td>
+            <th>Large</th>
+            <th>Normal</th>
+            <th>Small</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Default<small>.button</small></th>
+            <td><a class="button large">Large</a></td>
+            <td><a class="button">Default</a></td>
+            <td><a class="button small">Small</a></td>
+          </tr>
+          <tr>
+            <th>Primary<small>+.primary</small></th>
+            <td><a class="button primary large">Large</a></td>
+            <td><a class="button primary">Default</a></td>
+            <td><a class="button primary small">Small</a></td>
+          </tr>
+          <tr>
+            <th>Secondary<small>+.secondary</small></th>
+            <td><a class="button secondary large">Large</a></td>
+            <td><a class="button secondary">Default</a></td>
+            <td><a class="button secondary small">Small</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Button group</h2>
+
+    <h3>Normal</h3>
+
+    <div class="button-group">
+      <a class="button">Button 1</a>
+      <a class="button">Button 2</a>
+      <a class="button">Button 3</a>
+    </div>
+
+    <h3>Combined</h3>
+
+    <div class="button-group combine">
+      <a class="button">Button 1</a>
+      <a class="button">Button 2</a>
+      <a class="button">Button 3</a>
+      <div class="text">Text 1</div>
+      <div class="text">Text 2</div>
+      <a class="button">Button 4</a>
+    </div>
+
+    <h3>Mixed / Nested</h3>
+
+    <div class="button-group">
+      <a class="button">Button 1</a>
+
+      <div class="button-group combine">
+        <a class="button">Button 2</a>
+        <a class="button">Button 3</a>
+        <a class="button">Button 4</a>
+      </div>
+
+      <div class="button-group combine">
+        <a class="button">Button 5</a>
+        <a class="button">Button 6</a>
+        <a class="button">Button 7</a>
+      </div>
+
+      <a class="button">Button 8</a>
+    </div>
+  </section>
+
+  <section class="section" id="forms">
+    <h1>Forms</h1>
+
+    <div class="form">
+      <label>Text field<span>Required</span></label>
+      <input type="text" placeholder="Placeholder text">
+    </div>
+
+    <div class="form">
+      <label>Text field<span>Error</span></label>
+      <input type="text" class="error" placeholder="Placeholder text">
+    </div>
+
+    <div class="form">
+      <label class="required">Textarea</label>
+      <textarea placeholder="Placeholder text"></textarea>
+    </div>
+
+    <div class="form">
+      <label>Dropdown</label>
+      <select>
+        <option>Select some value</option>
+      </select>
+    </div>
+
+    <div class="grid gutter">
+      <div class="col s1of4 form">
+        <label>Single Checkboxes</label>
+
+        <label class="checkbox">
+          <input type="checkbox"> Checkbox #1
+        </label>
+
+        <span class="checkbox">
+          <input type="checkbox">
+          <label>Checkbox #2</label>
+        </span>
+
+        <label class="checkbox">
+          <input type="checkbox"> Checkbox #3
+        </label>
+      </div>
+
+      <div class="col s1of4 form">
+        <label>Checkbox List</label>
+
+        <ul class="checkbox">
+          <li>
+            <input type="checkbox">
+            <label class="checkbox">Checkbox #1</label>
+          </li>
+          <li>
+            <input type="checkbox">
+            <label class="checkbox">Checkbox #2</label>
+          </li>
+          <li>
+            <input type="checkbox">
+            <label class="checkbox">Checkbox #3</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col s1of4 form">
+        <label>Radio buttons</label>
+
+        <label class="radio">
+          <input type="radio" name="radio"> Radio button #1
+        </label>
+
+        <span class="radio">
+          <input type="radio">
+          <label>Radio button #2</label>
+        </span>
+
+        <label class="radio">
+          <input type="radio" name="radio"> Radio button #3
+        </label>
+      </div>
+
+      <div class="col s1of4 form">
+        <label>Radio buttons</label>
+
+        <ul class="radio">
+          <li>
+            <input type="radio">
+            <label>Radio button #1</label>
+          </li>
+          <li>
+            <input type="radio">
+            <label>Radio button #2</label>
+          </li>
+          <li>
+            <input type="radio">
+            <label>Radio button #3</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Forms: Labels on the side</h2>
+
+    <div class="form side">
+      <label>Text field<span>Required</span></label>
+      <input type="text" placeholder="Placeholder text">
+    </div>
+
+    <div class="form side">
+      <label>Textarea</label>
+      <textarea placeholder="Placeholder text"></textarea>
+    </div>
+
+    <div class="form side">
+      <label>Dropdown</label>
+      <select>
+        <option>Select some value</option>
+      </select>
+    </div>
+
+    <div class="form side">
+      <label>Checkbox List</label>
+
+      <ul class="checkbox">
+        <li>
+          <input type="checkbox">
+          <label class="checkbox">Checkbox #1</label>
+        </li>
+        <li>
+          <input type="checkbox">
+          <label class="checkbox">Checkbox #2</label>
+        </li>
+        <li>
+          <input type="checkbox">
+          <label class="checkbox">Checkbox #3</label>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Sizes</h2>
+
+    <div class="grid gutter">
+
+      <div class="col s2of6 form text-center">
+        Input[type="text"]
+      </div>
+
+      <div class="col s1of6 form text-center">
+        a.button
+      </div>
+
+      <div class="col s1of6 form text-center">
+        Input[type="submit"]
+      </div>
+
+      <div class="col s2of6 form text-center">
+        Select
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="col s2of6 form">
+        <input type="text" class="large" placeholder="Large">
+      </div>
+
+      <div class="col s1of6 form">
+        <a class="button large fill">Large</a>
+      </div>
+
+      <div class="col s1of6 form">
+        <input type="submit" class="button large fill" value="Large">
+      </div>
+
+      <div class="col s2of6 form">
+        <select class="large"><option>Large</option></select>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="col s2of6 form">
+        <input type="text" placeholder="Normal">
+      </div>
+
+      <div class="col s1of6 form">
+        <a class="button fill">Normal</a>
+      </div>
+
+      <div class="col s1of6 form">
+        <input type="submit" class="button fill" value="Normal">
+      </div>
+
+      <div class="col s2of6 form">
+        <select><option>Normal</option></select>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="col s2of6 form">
+        <input type="text" class="small" placeholder="Small">
+      </div>
+
+      <div class="col s1of6 form">
+        <a class="button small fill">Small</a>
+      </div>
+
+      <div class="col s1of6 form">
+        <input type="submit" class="button small fill" value="Small">
+      </div>
+
+      <div class="col s2of6 form">
+        <select class="small"><option>Small</option></select>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="tables">
+    <h1>Tables</h1>
+
+    <h3>.simple table</h3>
+    <div class="table-wrap">
+      <table class="simple">
+        <caption>* Source: Table caption</caption>
+        <colgroup>
+          <col style="width:20%">
+          <col style="width:60%">
+          <col style="width:20%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Fyrsti dálkur</th>
+            <th>Annar dálkur</th>
+            <th>Þriðji dálkur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fyrsti dálkur</td>
+            <td>Annar dálkur</td>
+            <td>Þriðji dálkur</td>
+          </tr>
+          <tr>
+            <td>Fyrsti dálkur</td>
+            <td>Annar dálkur</td>
+            <td>Þriðji dálkur</td>
+          </tr>
+          <tr>
+            <td>Fyrsti dálkur</td>
+            <td>Annar dálkur</td>
+            <td>Þriðji dálkur</td>
+          </tr>
+          <tr>
+            <td>Fyrsti dálkur</td>
+            <td>Annar dálkur</td>
+            <td>Þriðji dálkur</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Fyrsti dálkur</td>
+            <td>Annar dálkur</td>
+            <td>Þriðji dálkur</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+
+    <h3>.data table</h3>
+    <div class="table-wrap">
+      <table class="data">
+        <caption>* Source: Table caption</caption>
+        <colgroup>
+          <col style="width:20%">
+          <col style="width:60%">
+          <col style="width:20%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Fyrsti dálkur</th>
+            <th>Annar dálkur</th>
+            <th>Þriðji dálkur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fyrsti dálkur</td>
+            <td>Annar dálkur</td>
+            <td>Þriðji dálkur</td>
+          </tr>
+          <tr>
+            <td>Fyrsti dálkur</td>
+            <td>Annar dálkur</td>
+            <td>Þriðji dálkur</td>
+          </tr>
+          <tr>
+            <td>Fyrsti dálkur</td>
+            <td>Annar dálkur</td>
+            <td>Þriðji dálkur</td>
+          </tr>
+          <tr>
+            <td>Fyrsti dálkur</td>
+            <td>Annar dálkur</td>
+            <td>Þriðji dálkur</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Fyrsti dálkur</td>
+            <td>Annar dálkur</td>
+            <td>Þriðji dálkur</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </section>
+
+  <section class="section" id="box">
+    <h1>Box</h1>
+
+    <div class="grid gutter collapse720">
+
+      <div class="col s1of2">
+
+        <div class="box">
+          <div class="content title"><h2>.content.title + h2</h2></div>
+          <div class="content">
+            <p>Box with .content.title and .content inner wrappers</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col s1of2">
+
+        <div class="box">
+          <div class="content">
+            <p>Paragraph inside default box<br/>(.box)</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="grid">
+    <h1>Grid</h1>
+
+    <div class="grid gutter collapse960">
+      <div class="col s1of2"><div class="box"><p>s1of2</p></div></div>
+      <div class="col s1of2"><div class="box"><p>s1of2</p></div></div>
+    </div>
+
+    <div class="grid gutter">
+      <div class="col s1of3"><div class="box"><p>s1of3</p></div></div>
+      <div class="col s1of3"><div class="box"><p>s1of3</p></div></div>
+      <div class="col s1of3"><div class="box"><p>s1of3</p></div></div>
+    </div>
+
+    <div class="grid gutter">
+      <div class="col s1of4"><div class="box"><p>s1of4</p></div></div>
+      <div class="col s1of4"><div class="box"><p>s1of4</p></div></div>
+      <div class="col s1of4"><div class="box"><p>s1of4</p></div></div>
+      <div class="col s1of4"><div class="box"><p>s1of4</p></div></div>
+    </div>
+
+    <div class="grid gutter">
+      <div class="col s1of5"><div class="box"><p>s1of5</p></div></div>
+      <div class="col s1of5"><div class="box"><p>s1of5</p></div></div>
+      <div class="col s1of5"><div class="box"><p>s1of5</p></div></div>
+      <div class="col s1of5"><div class="box"><p>s1of5</p></div></div>
+      <div class="col s1of5"><div class="box"><p>s1of5</p></div></div>
+    </div>
+
+    <div class="grid gutter">
+      <div class="col s1of6"><div class="box"><p>s1of6</p></div></div>
+      <div class="col s1of6"><div class="box"><p>s1of6</p></div></div>
+      <div class="col s1of6"><div class="box"><p>s1of6</p></div></div>
+      <div class="col s1of6"><div class="box"><p>s1of6</p></div></div>
+      <div class="col s1of6"><div class="box"><p>s1of6</p></div></div>
+      <div class="col s1of6"><div class="box"><p>s1of6</p></div></div>
+    </div>
+
+    <div class="grid gutter">
+      <div class="col s1of7"><div class="box"><p>s1of7</p></div></div>
+      <div class="col s1of7"><div class="box"><p>s1of7</p></div></div>
+      <div class="col s1of7"><div class="box"><p>s1of7</p></div></div>
+      <div class="col s1of7"><div class="box"><p>s1of7</p></div></div>
+      <div class="col s1of7"><div class="box"><p>s1of7</p></div></div>
+      <div class="col s1of7"><div class="box"><p>s1of7</p></div></div>
+      <div class="col s1of7"><div class="box"><p>s1of7</p></div></div>
+    </div>
+
+    <div class="grid gutter">
+      <div class="col s1of8"><div class="box"><p>s1of8</p></div></div>
+      <div class="col s1of8"><div class="box"><p>s1of8</p></div></div>
+      <div class="col s1of8"><div class="box"><p>s1of8</p></div></div>
+      <div class="col s1of8"><div class="box"><p>s1of8</p></div></div>
+      <div class="col s1of8"><div class="box"><p>s1of8</p></div></div>
+      <div class="col s1of8"><div class="box"><p>s1of8</p></div></div>
+      <div class="col s1of8"><div class="box"><p>s1of8</p></div></div>
+      <div class="col s1of8"><div class="box"><p>s1of8</p></div></div>
+    </div>
+
+    <div class="grid gutter">
+      <div class="col s1of9"><div class="box"><p>s1of9</p></div></div>
+      <div class="col s1of9"><div class="box"><p>s1of9</p></div></div>
+      <div class="col s1of9"><div class="box"><p>s1of9</p></div></div>
+      <div class="col s1of9"><div class="box"><p>s1of9</p></div></div>
+      <div class="col s1of9"><div class="box"><p>s1of9</p></div></div>
+      <div class="col s1of9"><div class="box"><p>s1of9</p></div></div>
+      <div class="col s1of9"><div class="box"><p>s1of9</p></div></div>
+      <div class="col s1of9"><div class="box"><p>s1of9</p></div></div>
+      <div class="col s1of9"><div class="box"><p>s1of9</p></div></div>
+    </div>
+
+    <div class="grid gutter">
+      <div class="col s1of10"><div class="box"><p>s1of10</p></div></div>
+      <div class="col s1of10"><div class="box"><p>s1of10</p></div></div>
+      <div class="col s1of10"><div class="box"><p>s1of10</p></div></div>
+      <div class="col s1of10"><div class="box"><p>s1of10</p></div></div>
+      <div class="col s1of10"><div class="box"><p>s1of10</p></div></div>
+      <div class="col s1of10"><div class="box"><p>s1of10</p></div></div>
+      <div class="col s1of10"><div class="box"><p>s1of10</p></div></div>
+      <div class="col s1of10"><div class="box"><p>s1of10</p></div></div>
+      <div class="col s1of10"><div class="box"><p>s1of10</p></div></div>
+      <div class="col s1of10"><div class="box"><p>s1of10</p></div></div>
+    </div>
+  </section>
+</div>

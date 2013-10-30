@@ -1,0 +1,45 @@
+// form5.less
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.site-wrap {
+  .transition(border 150ms);
+  .box-sizing(border-box);
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border: 8px solid @color-primary;
+
+  @media only screen and (max-width: 568px) {
+    border-width: 4px;
+  }
+}
+
+.site-header {
+  border-bottom-width: 0;
+
+  .logo {
+    overflow: hidden;
+    display: block;
+    margin: @spacing/2 auto;
+    height: 100px;
+
+    text-indent: -9999em;
+
+    background: url("/img/form5-logo@2x.png") no-repeat 0 50%;
+    background-size: 100px;
+
+    @media only screen and (max-width: 568px) {
+      background-position: 50% 50%;
+    }
+  }
+}

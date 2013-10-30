@@ -1,0 +1,59 @@
+// checkradio.less
+
+ol.radio li label,
+ul.radio li label,
+ol.checkbox li label,
+ul.checkbox li label,
+label.radio,
+label.checkbox,
+span.radio label,
+span.checkbox label {
+	display: inline-block;
+
+	margin: 0;
+	padding: 0;
+
+	font-weight: normal;
+}
+
+ol.radio li input,
+ul.radio li input,
+ol.checkbox li input,
+ul.checkbox li input,
+label.radio input,
+label.checkbox input,
+span.radio input,
+span.checkbox input {
+	display: block;
+	float: left;
+
+	margin: 3px @spacing / 3 0 0;
+}
+
+ol.radio,
+ul.radio,
+ol.checkbox,
+ul.checkbox {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+		margin-bottom: @spacing / 4;
+
+		label {
+		}
+	}
+}
+
+label.radio,
+label.checkbox {
+	display: block;
+	margin-bottom: @spacing / 4;
+}
+
+span.radio,
+span.checkbox {
+	display: block;
+	margin-bottom: @spacing / 4;
+}

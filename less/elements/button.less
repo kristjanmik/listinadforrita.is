@@ -1,0 +1,71 @@
+// disill.button.less
+
+.button {
+	.box-sizing(border-box);
+	.user-select(none);
+	.transition(text-shadow 250ms, color 250ms, box-shadow 250ms, border 250ms, background 250ms);
+
+	display: inline-block;
+	margin: 0;
+	padding: 0 @spacing;
+
+	overflow: hidden;
+
+	font-family: @font-family-special;
+	font-weight: bold;
+
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+
+	border: 1px solid transparent;
+	border-radius: @button-border-radius;
+
+	outline: none;
+
+	&:hover,
+	&:active {
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	// Sizes
+	height: @size-normal;
+	line-height: @size-normal - 2;
+	font-size: @font-size-normal;
+
+	&.rounded {
+		border-radius: @size-normal / 2;
+	}
+
+	&.large {
+		height: @size-large;
+		line-height: @size-large - 2;
+		font-size: @font-size-large;
+
+		&.rounded {
+			border-radius: @size-large / 2;
+		}
+	}
+
+	&.small {
+		padding: 0 @spacing * .5;
+		height: @size-small;
+		line-height: @size-small - 2;
+		font-size: @font-size-small;
+
+		&.rounded {
+			border-radius: @size-small / 2;
+		}
+	}
+
+	// Miscellaneous
+	&.fill {
+		width: 100%;
+		text-align: center;
+	}
+
+	&.caps {
+		text-transform: uppercase;
+	}
+}

@@ -1,0 +1,20 @@
+// box.less
+
+.box {
+  .box-sizing(border-box);
+
+  margin: 0 0 @spacing;
+  padding: @spacing @spacing 0;
+
+  border: 1px solid @color-border;
+  border-radius: @radius;
+
+  > .content {
+    margin: -@spacing -@spacing @spacing;
+    padding: @spacing @spacing 0;
+
+    &.title {
+      border-bottom: 1px solid @color-border;
+    }
+  }
+}

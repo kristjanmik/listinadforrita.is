@@ -1,0 +1,101 @@
+// typography.less
+
+
+p {
+  margin: 0 0 @spacing;
+}
+
+a {
+  .transition(color 150ms);
+
+  cursor: pointer;
+
+  color: @color-primary;
+
+  &:hover,
+  &:focus {
+    color: darken(@color-primary,5%);
+    text-decoration: underline;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 @spacing;
+  padding: 0;
+
+  font-family: @font-family-special;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+hgroup {
+  *:first-child {
+    margin-bottom: @spacing / 2;
+  }
+}
+
+dl {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+  }
+}
+
+ul {
+
+  &.clean {
+    .reset-list();
+    margin: 0 0 @spacing;
+    padding-left: @spacing;
+  }
+}
+
+hr {
+  background: 0;
+  border: 0;
+  outline: 0;
+
+  .clearfix;
+  margin: @spacing 0;
+  height: 1px;
+  border-top: 1px solid @color-border;
+
+  &.dotline {
+    border-top-style: dashed;
+  }
+}
+
+code {
+  display: inline-block;
+  padding: 0 2px;
+  background: fade(@color-primary,20%);
+  border: 1px dotted @color-secondary;
+}

@@ -1,0 +1,25 @@
+// form-side.less
+
+.form.side {
+	position: relative;
+
+	padding-left: @form-side-width + @spacing;
+
+	> label {
+		position: absolute; top: 0; left: 0;
+
+		margin: 0;
+		padding: 0;
+
+		width: @form-side-width;
+
+		line-height: @size-normal;
+
+		span {
+			display: block;
+
+			margin-left: 0;
+			margin-top: -@size-normal / 1.85;
+		}
+	}
+}

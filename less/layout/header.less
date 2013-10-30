@@ -1,0 +1,20 @@
+// header.less
+
+.site-header {
+  margin: 0 auto @spacing;
+  padding: 0;
+
+  border-bottom: 8px solid @color-primary;
+
+  @media only screen and (max-width: 568px) {
+    border-bottom-width: 4px;
+  }
+
+  .logo {
+    line-height: 100px;
+    font-family: @font-family-special;
+    font-weight: 700;
+    font-size: 50px;
+    text-decoration: none;
+  }
+}

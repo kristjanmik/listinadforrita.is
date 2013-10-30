@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Instagram feed</title>
+
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			background: #333 url('http://blog.listinadforrita.is/content/images/2013/Oct/asset_blog.png');
+			background-size: cover;
+		}
+
+		.users-wrap {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 300px;
+			min-height: 100%;
+		}
+
+		.wrap {
+			position: absolute;
+			top: 0;
+			left: 0px;
+			min-width: 600px;
+			min-height: 100%;
+		}
+		@media only screen and (min-width: 600px) { .wrap {min-width: 900px;} }
+		@media only screen and (min-width: 900px) { .wrap {min-width: 1200px;} }
+		@media only screen and (min-width: 1200px) { .wrap {min-width: 1500px;} }
+
+		.cf:before,
+		.cf:after {
+		    content: " "; /* 1 */
+		    display: table; /* 2 */
+		}
+
+		.cf:after {
+		    clear: both;
+		}
+
+		.cf {
+		    *zoom: 1;
+		}
+
+		.instagram-index-class {}
+		.instagram-item-class {
+			float: left;
+		}
+		.figure,
+		.figure img {
+			-webkit-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			display: block;
+			margin: 0;
+			padding: 0;
+			width: 300px;
+			height: 300px;
+		}
+
+		.figure img.hide {
+			opacity: 0;
+		}
+	</style>
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="jquery.instagram.js"></script>
+	<script>
+		$(function(){
+			$('#instagram').instagram({
+				endpoint: 'tags',
+				endpoint_option: 'listinadforrita',
+				clientID: "1a46ed05df2048ecad19ca0eafecfa2a",
+				api_uri: "https://api.instagram.com/v1/",
+				limit: 50,
+				resolution: "low",
+				link: false,
+				debug: false
+			})
+			// $('#instagram-people').instagram({
+			// 	endpoint: 'media',
+			// 	endpoint_option: 'listinadforrita',
+			// 	clientID: "1a46ed05df2048ecad19ca0eafecfa2a",
+			// 	api_uri: "https://api.instagram.com/v1/",
+			// 	limit: 50,
+			// 	resolution: "low",
+			// 	link: false,
+			// 	debug: false
+			// })
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div class="wrap">
+
+		<div class="instagram-index-class cf" id="instagram">
+			<div class="instagram-item-class template">
+				<figure class="figure">
+					<img src="" alt="" class="image hide">
+				</figure>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

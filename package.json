@@ -1,0 +1,15 @@
+{
+  "name" : "LessBase",
+  "version": "1.0.0",
+  "description" : "Less-Base",
+  "author": "Benedikt D. Valdez <benediktvaldez@gmail.com>",
+  "contributors": [
+    "Finnur Sigurðsson <finnur@skapalon.is>"
+  ],
+  "dependencies": {
+    "mu2": "*",
+    "less": "*",
+    "express": "*",
+    "mootools": "*"
+  }
+}
